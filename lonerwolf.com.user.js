@@ -24,8 +24,8 @@ function myFunction() {
 
   var winScroll = el.scrollTop;
   // var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = el.scrollHeight - el.clientHeight;
-  // var height = document.documentElement.scrollHeight - el.clientHeight;
+  // var height = el.scrollHeight - el.clientHeight;
+  var height = $("article").height();
   var scrolled = (winScroll / height) * 100;
   document.getElementById("progressbar").style.width = scrolled + "%";
 }
